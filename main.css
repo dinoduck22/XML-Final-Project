@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    /*background: lightseagreen;*/
+    margin: auto;
+}
+
+.header {
+    /*background-color: #f1f1f1;*/
+    border-bottom: 3px solid black;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.column{
+    /*background-color: lightskyblue;*/
+    padding: 1px;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    width: fit-content;
+    height: 100%;
+    flex-direction: column;
+    align-content: center; /*수직정렬*/
+}
+
+.row {
+    margin: auto;
+    width: 90%;
+    height: calc(95vh - 60px);
+    display: flex;
+}
+
+.row::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    border-bottom: solid;
+    text-align: center;
+    font-size: 36px;
+    cursor: pointer;
+    padding: 20px;
+    transition-duration: 0.4s;
+}
+
+.button:active {
+    transform: translateY(4px);
+}
+
+.button-left {
+    border-bottom-color: #04AA6D;
+}
+
+.button-left:hover {
+    border-radius: 15%;
+    background-color: #04AA6D;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button-right {
+    border-bottom-color: orangered;
+    float: right;
+}
+
+.button-right:hover {
+    border-radius: 15%;
+    background-color: orangered;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.container{
+    /*background-color: gold;*/
+    display: block;
+    align-items: center;
+    width: auto;
+}
+
+/*디쿠 얼굴 배경*/
+.dicu{
+    position: relative;
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    background: url(source/dicu-head.svg) no-repeat center;
+    align-content: center;
+}
+
+/*디쿠 얼굴 원형*/
+.dicu-head{
+    /*background-color: mediumpurple;*/
+    margin-top: 50px;
+    border-radius: 50%;
+    width: 500px;
+    height: 450px;
+    display: block;
+    align-content: center;
+}
+
+/*디쿠 눈,입*/
+.face{
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background: url(source/dicu-face.svg) no-repeat;
+}
+
+/*heart*/
+.cursor{
+    position: absolute;
+    opacity: 0.7;
+    --c: red;
+    width: 20px;
+    aspect-ratio: 1;
+    background:
+        /* 1 */ radial-gradient(circle at 60% 65%,var(--c) 64%,#0000 65%) top left/50% 50%,
+        /* 2 */ radial-gradient(circle at 40% 65%,var(--c) 64%,#0000 65%) top right/50% 50%,
+        /* 3 */ conic-gradient(from -45deg at 50% 85.5%,var(--c) 90deg,#0000 0) bottom/100% 50%;
+    background-repeat: no-repeat;
+}
