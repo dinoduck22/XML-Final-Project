@@ -8,17 +8,18 @@
     font-size: 20px;
 }
 
-
+pre {
+    display: inline-block;
+    border: solid gray;
+    padding: 10px;
+    word-break: break-all;
+}
 
 header > ul {
     /*background-color: bisque;*/
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-ul {
-    list-style-type: circle;
 }
 
 li {
@@ -30,11 +31,11 @@ a {
 }
 
 a:visited {
-    color: darkslategray;
+    color: darkgoldenrod;
 }
 
 a:hover {
-    color: #04AA6D;
+    color: orangered;
 }
 
 .button {
@@ -52,7 +53,7 @@ a:hover {
 }
 
 .button-right {
-    color: orangered;
+    color: #04AA6D;
 }
 
 aside {
@@ -70,7 +71,7 @@ aside {
 }
 
 .column{
-    /*background-color: lightskyblue;*/
+    background-color: lightskyblue;
     padding-left: 20px;
     float: left;
     display: inline-block;
@@ -82,7 +83,7 @@ aside {
 }
 
 .row {
-    /*background-color: orangered;*/
+    background-color: orangered;
     margin: auto;
     height: 85vh;
     display: flex;

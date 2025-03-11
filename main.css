@@ -1,10 +1,23 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 div {
     /*background: lightseagreen;*/
     margin: auto;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.side {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
 }
 
 .header {
@@ -12,7 +25,6 @@ div {
     border-bottom: 3px solid black;
     text-align: center;
     font-size: 20px;
-    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .column{
@@ -30,7 +42,7 @@ div {
 .row {
     margin: auto;
     width: 90%;
-    height: calc(95vh - 60px);
+    height: 85vh;
     display: flex;
 }
 
@@ -57,6 +69,7 @@ div {
 
 .button-left {
     border-bottom-color: #04AA6D;
+    float: left;
 }
 
 .button-left:hover {
@@ -76,7 +89,7 @@ div {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.container{
+.container {
     /*background-color: gold;*/
     display: block;
     align-items: center;
@@ -84,7 +97,7 @@ div {
 }
 
 /*디쿠 얼굴 배경*/
-.dicu{
+.dicu {
     position: relative;
     display: inline-block;
     width: 500px;
@@ -94,7 +107,7 @@ div {
 }
 
 /*디쿠 얼굴 원형*/
-.dicu-head{
+.dicu-head {
     /*background-color: mediumpurple;*/
     margin-top: 50px;
     border-radius: 50%;
@@ -105,7 +118,7 @@ div {
 }
 
 /*디쿠 눈,입*/
-.face{
+.face {
     position: relative;
     display: inline-block;
     width: 250px;
@@ -114,7 +127,7 @@ div {
 }
 
 /*heart*/
-.cursor{
+.cursor {
     position: absolute;
     opacity: 0.7;
     --c: red;
